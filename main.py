@@ -32,7 +32,7 @@ def image_to_base64(image_path):
         base64_image = base64.b64encode(image_file.read()).decode("utf-8")
     return base64_image
 
-image_base64 = image_to_base64("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/arkaplan.JPG")
+image_base64 = image_to_base64("arkaplan.JPG")
 
 # CSS ile sidebar başlığını küçültüyoruz
 
@@ -100,18 +100,18 @@ if page == "Project Information":
     # 3 üstte, 2 altta olacak şekilde fotoğrafları ve isimleri yerleştirme
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/ecem.png", width=150, caption="Ecem Zeynep Iscanli")
+        st.image("ecem.png", width=150, caption="Ecem Zeynep Iscanli")
     with col2:
-        st.image("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/kosmas.png", width=150, caption="Kosmas Konomis")
+        st.image("kosmas.png", width=150, caption="Kosmas Konomis")
     with col3:
-        st.image("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/shivesh.png", width=150, caption="Shevish")
+        st.image("shivesh.png", width=150, caption="Shevish")
 
     col_left, col_right = st.columns([0.5, 1])
 
     with col_left:
-        st.image("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/rhythm.png", width=150, caption="Rhythm Chaudhary")
+        st.image("rhythm.png", width=150, caption="Rhythm Chaudhary")
     with col_right:
-        st.image("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/ira.png", width=150, caption="Ira Ira")
+        st.image("ira.png", width=150, caption="Ira Ira")
 
     # Proje adı ve amacı
     st.subheader("Project Information")
