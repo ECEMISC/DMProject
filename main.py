@@ -163,7 +163,7 @@ elif page == "Prediction":
     input_data['OverTime_Yes'] = 1 if overtime == 'Yes' else 0
 
     # Kullanicidan gelen veriyi 'Processed data.cv' verisi ile eslestirme
-input_data = pd. concat ( [df, input_datal, axis=0, ignore_index=True).tail(1) # (SV'den son satir al
+input_data = pd. concat ( [df, input_data], axis=0, ignore_index=True).tail(1) # (SV'den son satir al
 
     # Sütunları modeldeki sıraya göre yeniden düzenleyelim
     input_data = input_data[model_features]
