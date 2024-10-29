@@ -80,7 +80,7 @@ st.markdown(
 )
 
 # Processed_data. cv dosyasina yükleme (tahmin islemi için gerekli)
-df = pd. read_csv("processed_data.cs") # Processed_data. cv dosyasin1 yükle
+df = pd. read_csv("processed_data.csv") # Processed_data. cv dosyasin1 yükle
 
 # Proje Bilgileri sayfası
 if page == "Project Information":
