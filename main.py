@@ -79,6 +79,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Processed_data. cv dosyasina yükleme (tahmin islemi için gerekli)
+df = pd. read_csv("processed_data.cs") # Processed_data. cv dosyasin1 yükle
 
 # Proje Bilgileri sayfası
 if page == "Project Information":
@@ -160,6 +162,8 @@ elif page == "Prediction":
     # Overtime sütunu için dummy (one-hot encoding)
     input_data['OverTime_Yes'] = 1 if overtime == 'Yes' else 0
 
+    # Kullanicidan gelen veriyi 'Processed data.cv' verisi ile eslestirme
+input_data = pd. concat ( [df, input_datal, axis=0, ignore_index=True).tail(1) # (SV'den son satir al
 
     # Sütunları modeldeki sıraya göre yeniden düzenleyelim
     input_data = input_data[model_features]
