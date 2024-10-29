@@ -80,9 +80,6 @@ st.markdown(
 )
 
 
-# Processed_data.csv dosyasını yükleme (tahmin işlemi için gerekli)
-df = pd.read_csv("/Users/ecemzeynepiscanli/PycharmProjects/DMProject/processed_data.csv")  # Processed_data.csv dosyasını yükle
-
 # Proje Bilgileri sayfası
 if page == "Project Information":
     # Büyük başlık: HR Attrition Predictor
